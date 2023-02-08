@@ -1,0 +1,87 @@
+.quote-card {
+  border: 1px solid #000;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.quote-card__side {
+  width: 40%;
+  border-right: 1px solid #000;
+}
+
+.quote-card__side--header {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #000;
+}
+
+.quote-card__side--header img {
+  margin-right: 8px;
+  width: 50px;
+  height: 50px;
+}
+
+.quote-card__side--content {
+  padding: 8px;
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+
+.quote-card__range {
+  color: #4129c7;
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+.quote-card__date {
+  font-size: 15px;
+}
+
+.quote-card__date p {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.quote-card__main {
+  width: 60%;
+}
+
+.quote-card__main--header {
+  height: 20%;
+  text-align: center;
+  font-weight: 600;
+  color: white;
+  background-color: blue;
+  display: grid;
+  place-items: center;
+}
+
+.quote-card__main--content {
+  height: 80%;
+  text-align: center;
+  font-size: 40px;
+  display: grid;
+  place-items: center;
+}
+
+@media (max-width: 768px) {
+  .quote-card {
+    flex-direction: column;
+  }
+
+  .quote-card__side {
+    width: 100%;
+    border-right: none;
+  }
+
+  .quote-card__main {
+    width: 100%;
+  }
+}
